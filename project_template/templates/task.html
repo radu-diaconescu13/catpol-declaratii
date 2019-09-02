@@ -22,7 +22,7 @@
             {% csrf_token %}
             <div class="row-fluid">
                 {# Provide additional context for non-native speakers #}
-                {% if "en" in request.LANGUAGE_CODE %}
+                {% if "en" or "ro" in request.LANGUAGE_CODE %}
                     {% block explanation %}{% endblock %}
                 {% endif %}
                 {# Forms incoming! #}

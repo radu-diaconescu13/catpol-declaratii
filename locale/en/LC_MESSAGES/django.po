@@ -71,3 +71,11 @@ msgstr "Give me a task!"
 #: project_template/templates/task.html:42
 msgid "SendTheData"
 msgstr "Send the data"
+
+#: project_template/templates/row_count_template.html:6
+msgid "Please specify the number of filled rows in the table."
+msgstr ""
+
+#: project_template/templates/row_count_template.html:7
+msgid "On some rows, more than one value was added. These should be counted as multiple rows and added separately."
+msgstr ""

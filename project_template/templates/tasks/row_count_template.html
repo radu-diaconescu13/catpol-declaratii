@@ -1,8 +1,9 @@
 {% extends "task.html" %}
+{% load i18n %}
 
 {% block explanation %}
 <div class="row-fluid">
-    <p>Please specify the number of filled rows in the table.</p>
-    <p>On some rows, more than one value was added. These should be counted as multiple rows and added separately.</p>
+    <p>{% trans 'Please specify the number of filled rows in the table.' %}</p>
+    <p>{% trans 'On some rows, more than one value was added. These should be counted as multiple rows and added separately.' %}</p>
 </div>
 {% endblock %}

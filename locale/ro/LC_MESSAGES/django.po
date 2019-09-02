@@ -76,3 +76,11 @@ msgstr "Dă-mi un task!"
 #: project_template/templates/task.html:42
 msgid "SendTheData"
 msgstr "Salvează"
+
+#: project_template/templates/row_count_template.html:6
+msgid "Please specify the number of filled rows in the table."
+msgstr "Va rugam introduceti numarul de randuri completate din tabel."
+
+#: project_template/templates/row_count_template.html:7
+msgid "On some rows, more than one value was added. These should be counted as multiple rows and added separately."
+msgstr "Pe anumite randuri mai multe valori au foat adaugate. Acestea ar trebui considerate ca fiind randuri distincte si adaugate separat."
