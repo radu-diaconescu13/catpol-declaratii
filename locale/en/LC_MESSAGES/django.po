@@ -73,9 +73,9 @@ msgid "SendTheData"
 msgstr "Send the data"
 
 #: project_template/templates/row_count_template.html:6
-msgid "Please specify the number of filled rows in the table."
-msgstr ""
+msgid "Vă rugăm introduceți numărul de rânduri completate din tabel."
+msgstr "Please specify the number of filled rows in the table."
 
 #: project_template/templates/row_count_template.html:7
-msgid "On some rows, more than one value was added. These should be counted as multiple rows and added separately."
-msgstr ""
+msgid "Pe anumite rânduri mai multe valori au fost adăugate. Acestea ar trebui considerate ca fiind rânduri distincte și adăugate separat."
+msgstr "On some rows, more than one value was added. These should be counted as multiple rows and added separately."
