@@ -38,15 +38,15 @@ def get_dict_year_choices():
 class TranscribeInitialInformation(forms.Form):
     # Form fields for identifying the politician
     name = forms.CharField(label=_("Care este numele politicianului?"))
-    previous_name = forms.CharField(label=_("Care este numele anterior al politicianului? (in cazul in care se aplica)"), required=False)
-    initials = forms.CharField(label=_("Care sunt initialele politicianului? (in cazul in care se aplica)"), required=False)
+    previous_name = forms.CharField(label=_("Care este numele anterior al politicianului? (în cazul în care se aplică) "), required=False)
+    initials = forms.CharField(label=_("Care sunt inițialele politicianului? (în cazul în care se aplică) "), required=False)
     surname = forms.CharField(label=_("Care este prenumele politicianului?"))
     # Form fields for identifying the declaration
-    position = forms.ChoiceField(label=_("Care este pozitia politicianului?"), choices=Position.return_as_iterable())
+    position = forms.ChoiceField(label=_("Care este poziția politicianului? "), choices=Position.return_as_iterable())
     date = forms.DateField(label=_("Care este data completării declarației de avere?"), widget=forms.SelectDateWidget(years=calculate_year_choices()), input_formats=['%Y-%m-%d'])
-    institution = forms.ChoiceField(label=_("Care este institutia in cadrul careia lucra politicianul la data completarii declaratiei de avere?"),
+    institution = forms.ChoiceField(label=_("Care este instituția în cadrul căreia lucra politicianul la data completării declarației de avere?"),
                                         choices=Institution.return_as_iterable())
-    declaration_type = forms.ChoiceField(label=_("Ce tip de declaratie este completata?"), choices=DeclarationType.return_as_iterable())
+    declaration_type = forms.ChoiceField(label=_("Ce tip de declarație este completată?"), choices=DeclarationType.return_as_iterable())
 
 
 class TranscribeOwnedLandTable(forms.Form):

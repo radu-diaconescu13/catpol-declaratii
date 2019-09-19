@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 15:15+0000\n"
+"POT-Creation-Date: 2019-09-19 19:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,64 +18,61 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: project_template/forms.py:8
-msgid "What is the name of the current politician?"
-msgstr ""
+#: project_template/forms.py:40
+msgid "Care este numele politicianului?"
+msgstr "What is the politician's surname?"
 
-#: project_template/forms.py:9
-msgid "What is the surname of the current politician?"
-msgstr ""
+#: project_template/forms.py:41
+msgid ""
+"Care este numele anterior al politicianului? (în cazul în care se aplică) "
+msgstr "What is the politician's previous surname? (if applicable)"
 
-#: project_template/forms.py:10
-msgid "What is the position of the current politician?"
-msgstr ""
+#: project_template/forms.py:42
+msgid "Care sunt inițialele politicianului? (în cazul în care se aplică) "
+msgstr "What are the politician's initials? (if applicable)"
 
-#: project_template/forms.py:11
-msgid "Date"
-msgstr ""
+#: project_template/forms.py:43
+msgid "Care este prenumele politicianului?"
+msgstr "What is the politician's name?"
 
-#: project_template/models.py:10
-msgid "The name"
-msgstr ""
+#: project_template/forms.py:45
+msgid "Care este poziția politicianului? "
+msgstr "What is the politician's position?"
 
-#: project_template/models.py:11
-msgid "The surname"
-msgstr ""
+#: project_template/forms.py:46
+msgid "Care este data completării declarației de avere?"
+msgstr "When was the asset declaration filled in?"
 
-#: project_template/models.py:58 project_template/models.py:64
-#: project_template/models.py:70 project_template/models.py:76
-#: project_template/models.py:82 project_template/models.py:88
-#: project_template/models.py:94 project_template/models.py:100
-#: project_template/models.py:106 project_template/models.py:112
-#: project_template/models.py:118 project_template/models.py:124
-#: project_template/models.py:130 project_template/models.py:136
-#: project_template/models.py:142 project_template/models.py:148
-#: project_template/models.py:154 project_template/models.py:160
-#: project_template/models.py:166
-msgid "The number of rows"
-msgstr ""
+#: project_template/forms.py:47
+msgid  "Care este instituția în cadrul căreia lucra politicianul la data completării declarației de avere?"
+msgstr "At what institution did the politician work when the asset declaration was filled?"
 
-#: project_template/templates/base.html:7
-#: project_template/templates/home.html:14
+#: project_template/forms.py:49
+msgid "Ce tip de declarație este completată?"
+msgstr "What kind of declaration is filled?"
+
+#: project_template/templates/tasks/general_information_task.html:6
+msgid "Va rugăm transcrieți informația de la începutul declarației de avere"
+msgstr "Please transcribe the information at the very beginning of the asset declaration."
+
 msgid "HomePageTitle"
 msgstr "Document Digitization"
 
-#: project_template/templates/base.html:34
 msgid "PoliticalCatalogue"
 msgstr "Political Catalogue"
 
-#: project_template/templates/home.html:21
 msgid "GiveMeATask"
 msgstr "Give me a task!"
 
-#: project_template/templates/task.html:42
 msgid "SendTheData"
 msgstr "Send the data"
 
-#: project_template/templates/row_count_template.html:6
-msgid "Vă rugăm introduceți numărul de rânduri completate din tabel."
-msgstr "Please specify the number of filled rows in the table."
+#~ msgid "Vă rugăm introduceți numărul de rânduri completate din tabel."
+#~ msgstr "Please specify the number of filled rows in the table."
 
-#: project_template/templates/row_count_template.html:7
-msgid "Pe anumite rânduri mai multe valori au fost adăugate. Acestea ar trebui considerate ca fiind rânduri distincte și adăugate separat."
-msgstr "On some rows, more than one value was added. These should be counted as multiple rows and added separately."
+#~ msgid ""
+#~ "Pe anumite rânduri mai multe valori au fost adăugate. Acestea ar trebui "
+#~ "considerate ca fiind rânduri distincte și adăugate separat."
+#~ msgstr ""
+#~ "On some rows, more than one value was added. These should be counted as "
+#~ "multiple rows and added separately."

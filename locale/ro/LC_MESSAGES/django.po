@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 15:14+0000\n"
+"POT-Creation-Date: 2019-09-19 19:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,68 +19,63 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
 "2:1));\n"
 
-#: project_template/forms.py:8
-msgid "What is the name of the current politician?"
-msgstr "Care este numele persoanei publice?"
+#: project_template/forms.py:40
+msgid "Care este numele politicianului?"
+msgstr ""
 
-#: project_template/forms.py:9
-msgid "What is the surname of the current politician?"
-msgstr "Care este prenumele persoanei publice?"
+#: project_template/forms.py:41
+msgid ""
+"Care este numele anterior al politicianului? (în cazul în care se aplică) "
+msgstr ""
 
-#: project_template/forms.py:10
-msgid "What is the position of the current politician?"
-msgstr "Care este funcția persoanei publice?"
+#: project_template/forms.py:42
+msgid "Care sunt inițialele politicianului? (în cazul în care se aplică) "
+msgstr ""
 
-#: project_template/forms.py:11
-msgid "Date"
-msgstr "Dată"
+#: project_template/forms.py:43
+msgid "Care este prenumele politicianului?"
+msgstr ""
 
-#: project_template/models.py:10
-msgid "The name"
-msgstr "Nume de familie"
+#: project_template/forms.py:45
+msgid "Care este poziția politicianului? "
+msgstr ""
 
-#: project_template/models.py:11
-msgid "The surname"
-msgstr "Prenume"
+#: project_template/forms.py:46
+msgid "Care este data completării declarației de avere?"
+msgstr ""
 
-#: project_template/models.py:12
-msgid "The current poition the politician holds"
-msgstr "Funcție ocupată în acest moment"
+#: project_template/forms.py:47
+msgid  "Care este instituția în cadrul căreia lucra politicianul la data completării declarației de avere?"
+msgstr ""
 
-#: project_template/models.py:58 project_template/models.py:64
-#: project_template/models.py:70 project_template/models.py:76
-#: project_template/models.py:82 project_template/models.py:88
-#: project_template/models.py:94 project_template/models.py:100
-#: project_template/models.py:106 project_template/models.py:112
-#: project_template/models.py:118 project_template/models.py:124
-#: project_template/models.py:130 project_template/models.py:136
-#: project_template/models.py:142 project_template/models.py:148
-#: project_template/models.py:154 project_template/models.py:160
-#: project_template/models.py:166
-msgid "The number of rows"
-msgstr "Număr de rânduri"
+#: project_template/forms.py:49
+msgid "Ce tip de declarație este completată?"
+msgstr ""
 
-#: project_template/templates/base.html:7
-#: project_template/templates/home.html:14
+#: project_template/templates/tasks/general_information_task.html:6
+msgid "Va rugăm transcrieți informația de la începutul declarației de avere"
+msgstr ""
+
+#~ msgid "The name"
+#~ msgstr "Nume de familie"
+
+#~ msgid "The surname"
+#~ msgstr "Prenume"
+
+#~ msgid "The current poition the politician holds"
+#~ msgstr "Funcție ocupată în acest moment"
+
+#~ msgid "The number of rows"
+#~ msgstr "Număr de rânduri"
+
 msgid "HomePageTitle"
 msgstr "Digitizare declarații"
 
-#: project_template/templates/base.html:34
 msgid "PoliticalCatalogue"
 msgstr "Catalog Politic"
 
-#: project_template/templates/home.html:21
 msgid "GiveMeATask"
 msgstr "Dă-mi un task!"
 
-#: project_template/templates/task.html:42
 msgid "SendTheData"
 msgstr "Salvează"
-
-#: project_template/templates/row_count_template.html:6
-msgid "Vă rugăm introduceți numărul de rânduri completate din tabel."
-msgstr ""
-
-#: project_template/templates/row_count_template.html:7
-msgid "Pe anumite rânduri mai multe valori au fost adăugate. Acestea ar trebui considerate ca fiind rânduri distincte și adăugate separat."
-msgstr ""
