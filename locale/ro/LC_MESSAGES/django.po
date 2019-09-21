@@ -131,3 +131,46 @@ msgstr ""
 
 msgid "Câte rânduri completate există în tabelul Venituri ale declarantului si ale membrilor sai de familie - 8. Venituri din alte surse?"
 msgstr ""
+
+msgid "Va rugam introduceti informatiile de pe randul %(nr_rand)s completat din tabelul \"Bunuri Imobile - Cladiri\"."
+msgstr ""
+
+#: project_template/forms.py:80
+msgid "Care este judetul in care se gaseste cladirea detinuta?"
+msgstr ""
+
+#: project_template/forms.py:81
+msgid "Care este localitatea in care se gaseste cladirea detinuta?"
+msgstr ""
+
+#: project_template/forms.py:82
+msgid "Care este comuna in care se gaseste cladirea detinuta?"
+msgstr ""
+
+#: project_template/forms.py:83
+msgid "Care este categoria de cladire?"
+msgstr ""
+
+#: project_template/forms.py:84
+msgid "Care este anul cand cladirea a fost dobandita?"
+msgstr ""
+
+#: project_template/forms.py:85
+msgid "Care este suprafata cladirii? (mp)"
+msgstr ""
+
+#: project_template/forms.py:86
+msgid "Care este cota parte din acestă clădire? (în procente)"
+msgstr ""
+
+#: project_template/forms.py:87
+msgid "Care este valoarea impozabilă a clădirii? (dacă există)"
+msgstr ""
+
+#: project_template/forms.py:88
+msgid "Care este valuta in care este exprimata valoarea impozabilă a clădirii?"
+msgstr ""
+
+#: project_template/forms.py:89
+msgid "Care este modul in care cladirea a fost dobandita?"
+msgstr ""

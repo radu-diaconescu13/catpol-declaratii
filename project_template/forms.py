@@ -77,18 +77,18 @@ class TranscribeOwnedBuildingsTable(forms.Form):
 
 
 class TranscribeOwnedBuildingsRowEntry(forms.Form):
-    county = forms.ChoiceField(label="Care este judetul in care se gaseste cladirea detinuta?", choices=Counties.return_counties())
-    city = forms.CharField(label="Care este localitatea in care se gaseste cladirea detinuta?")
-    commune = forms.CharField(label="Care este comuna in care se gaseste cladirea detinuta?")
-    building_type = forms.ChoiceField(label="Care este categoria de teren?", choices=BuildingType.return_as_iterable())
-    ownership_start_year = forms.ChoiceField(label="Care este anul cand cladirea a fost dobandita?", choices=get_dict_year_choices)
-    surface_area = forms.FloatField(label="Care este suprafata cladirii? (mp)")
-    percent_of_ownership = forms.IntegerField(label="Care este cota parte din acestă clădire? (în procente)", max_value=100, min_value=0)
-    taxable_value = forms.FloatField(label="Care este valoarea impozabilă a clădirii? (dacă există)", required=False)
-    taxable_value_currency = forms.ChoiceField(label="Care este valuta in care este exprimata valoarea impozabilă a clădirii?", choices=Currency.return_as_iterable())
-    attainment_type = forms.ChoiceField(label="Care este modul in care cladirea a fost dobandita?", choices=AttainmentType.return_as_iterable())
-    owner_surname = forms.CharField(label="Care este numele titularului?")
-    owner_name = forms.CharField(label="Care este prenumele titularului")
+    county = forms.ChoiceField(label=_("Care este judetul in care se gaseste cladirea detinuta?"), choices=Counties.return_counties())
+    city = forms.CharField(label=_("Care este localitatea in care se gaseste cladirea detinuta?"))
+    commune = forms.CharField(label=_("Care este comuna in care se gaseste cladirea detinuta?"))
+    building_type = forms.ChoiceField(label=_("Care este categoria de cladire?"), choices=BuildingType.return_as_iterable())
+    ownership_start_year = forms.ChoiceField(label=_("Care este anul cand cladirea a fost dobandita?"), choices=get_dict_year_choices)
+    surface_area = forms.FloatField(label=_("Care este suprafata cladirii? (mp)"))
+    percent_of_ownership = forms.IntegerField(label=_("Care este cota parte din acestă clădire? (în procente)"), max_value=100, min_value=0)
+    taxable_value = forms.FloatField(label=_("Care este valoarea impozabilă a clădirii? (dacă există)"), required=False)
+    taxable_value_currency = forms.ChoiceField(label=_("Care este valuta in care este exprimata valoarea impozabilă a clădirii?"), choices=Currency.return_as_iterable())
+    attainment_type = forms.ChoiceField(label=_("Care este modul in care cladirea a fost dobandita?"), choices=AttainmentType.return_as_iterable())
+    owner_surname = forms.CharField(label=_("Care este numele titularului?"))
+    owner_name = forms.CharField(label=_("Care este prenumele titularului"))
 
 
 class TranscribeOwnedAutomobileTable(forms.Form):
