@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-19 19:11+0000\n"
+"POT-Creation-Date: 2019-09-21 15:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,54 +19,52 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
 "2:1));\n"
 
-#: project_template/forms.py:40
+#: project_template/forms.py:41
 msgid "Care este numele politicianului?"
 msgstr ""
 
-#: project_template/forms.py:41
+#: project_template/forms.py:42
 msgid ""
 "Care este numele anterior al politicianului? (în cazul în care se aplică) "
 msgstr ""
 
-#: project_template/forms.py:42
+#: project_template/forms.py:43
 msgid "Care sunt inițialele politicianului? (în cazul în care se aplică) "
 msgstr ""
 
-#: project_template/forms.py:43
+#: project_template/forms.py:44
 msgid "Care este prenumele politicianului?"
 msgstr ""
 
-#: project_template/forms.py:45
+#: project_template/forms.py:46
 msgid "Care este poziția politicianului? "
 msgstr ""
 
-#: project_template/forms.py:46
+#: project_template/forms.py:47
 msgid "Care este data completării declarației de avere?"
 msgstr ""
 
-#: project_template/forms.py:47
-msgid  "Care este instituția în cadrul căreia lucra politicianul la data completării declarației de avere?"
+#: project_template/forms.py:48
+msgid ""
+"Care este instituția în cadrul căreia lucra politicianul la data completării "
+"declarației de avere?"
 msgstr ""
 
-#: project_template/forms.py:49
+#: project_template/forms.py:50
 msgid "Ce tip de declarație este completată?"
 msgstr ""
 
-#: project_template/templates/tasks/general_information_task.html:6
-msgid "Va rugăm transcrieți informația de la începutul declarației de avere"
-msgstr ""
+msgid "The name"
+msgstr "Nume de familie"
 
-#~ msgid "The name"
-#~ msgstr "Nume de familie"
+msgid "The surname"
+msgstr "Prenume"
 
-#~ msgid "The surname"
-#~ msgstr "Prenume"
+msgid "The current poition the politician holds"
+msgstr "Funcție ocupată în acest moment"
 
-#~ msgid "The current poition the politician holds"
-#~ msgstr "Funcție ocupată în acest moment"
-
-#~ msgid "The number of rows"
-#~ msgstr "Număr de rânduri"
+msgid "The number of rows"
+msgstr "Număr de rânduri"
 
 msgid "HomePageTitle"
 msgstr "Digitizare declarații"
@@ -79,3 +77,57 @@ msgstr "Dă-mi un task!"
 
 msgid "SendTheData"
 msgstr "Salvează"
+
+msgid "Câte rânduri completate există în tabelul Bunuri Imobile - Terenuri?"
+msgstr ""
+
+msgid "Câte rânduri completate există în tabelul Bunuri Imobile - Cladiri?"
+msgstr ""
+
+msgid "Câte rânduri completate există în tabelul Bunuri Mobile - Autovehicule/Autoturisme?"
+msgstr ""
+
+msgid "Câte rânduri completate există în tabelul Bunuri Mobile - Metale pretioase, bijuterii, etc?"
+msgstr ""
+
+msgid "Câte rânduri completate există în tabelul Bunuri Mobile - Valoare depaseste 3000euro?"
+msgstr ""
+
+msgid "Câte rânduri completate există în tabelul Active Financiare - Conturi si depozite bancare?"
+msgstr ""
+
+msgid "Câte rânduri completate există în tabelul Active Financiare - Plasamente/Investitii directe?"
+msgstr ""
+
+msgid "Câte rânduri completate există în tabelul Alte active producatoare de venituri?"
+msgstr ""
+
+msgid "Câte rânduri completate există în tabelul Datorii?"
+msgstr ""
+
+msgid "Câte rânduri completate există în tabelul Cadouri/Servicii?"
+msgstr ""
+
+msgid "Câte rânduri completate există în tabelul Venituri ale declarantului si ale membrilor sai de familie - 1. Venituri din salarii?"
+msgstr ""
+
+msgid "Câte rânduri completate există în tabelul Venituri ale declarantului si ale membrilor sai de familie - 2. Venituri din activitati independente?"
+msgstr ""
+
+msgid "Câte rânduri completate există în tabelul Venituri ale declarantului si ale membrilor sai de familie - 3. Venituri din cedarea folosintei bunurilor?"
+msgstr ""
+
+msgid "Câte rânduri completate există în tabelul Venituri ale declarantului si ale membrilor sai de familie - 4. Venituri din investitii?"
+msgstr ""
+
+msgid "Câte rânduri completate există în tabelul Venituri ale declarantului si ale membrilor sai de familie - 5. Venituri din pensii?"
+msgstr ""
+
+msgid "Câte rânduri completate există în tabelul Venituri ale declarantului si ale membrilor sai de familie - 6. Venituri din activitati agricole?"
+msgstr ""
+
+msgid "Câte rânduri completate există în tabelul Venituri ale declarantului si ale membrilor sai de familie - 7. Venituri din premii si jocuri de noroc?"
+msgstr ""
+
+msgid "Câte rânduri completate există în tabelul Venituri ale declarantului si ale membrilor sai de familie - 8. Venituri din alte surse?"
+msgstr ""

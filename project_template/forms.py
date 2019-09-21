@@ -1,6 +1,7 @@
 import datetime
 
 from django import forms
+from django.utils.text import format_lazy
 from django.utils.translation import ugettext_lazy as _
 
 from project_template import constants
@@ -50,8 +51,9 @@ class TranscribeInitialInformation(forms.Form):
 
 
 class TranscribeOwnedLandTable(forms.Form):
-    count = forms.IntegerField(label="Câte rânduri completate există în tabelul {}?".format(constants.DECLARATION_TABLES['land']), min_value=0)
-
+    count = forms.IntegerField(label=_(format_lazy('Câte rânduri completate există în tabelul {land}?',
+                                                 land=_(constants.DECLARATION_TABLES['land']))),
+                               min_value=0)
 
 class TranscribeOwnedLandRowEntry(forms.Form):
     county = forms.ChoiceField(label="Care este judetul in care se gaseste terenul detinut?", choices=Counties.return_counties())
@@ -69,7 +71,9 @@ class TranscribeOwnedLandRowEntry(forms.Form):
 
 
 class TranscribeOwnedBuildingsTable(forms.Form):
-    count = forms.IntegerField(label="Câte rânduri completate există în tabelul {}".format(constants.DECLARATION_TABLES['buildings']), min_value=0)
+    count = forms.IntegerField(label=_(format_lazy('Câte rânduri completate există în tabelul {buildings}?',
+                                                   buildings=_(constants.DECLARATION_TABLES['buildings']))),
+                               min_value=0)
 
 
 class TranscribeOwnedBuildingsRowEntry(forms.Form):
@@ -88,8 +92,9 @@ class TranscribeOwnedBuildingsRowEntry(forms.Form):
 
 
 class TranscribeOwnedAutomobileTable(forms.Form):
-    count = forms.IntegerField(label="Câte rânduri completate există în tabelul {}?".format(constants.DECLARATION_TABLES['automobiles']), min_value=0)
-
+    count = forms.IntegerField(label=_(format_lazy('Câte rânduri completate există în tabelul {automobiles}?',
+                                                   automobiles=_(constants.DECLARATION_TABLES['automobiles']))),
+                               min_value=0)
 
 class TranscribeOwnedAutomobileRowEntry(forms.Form):
     automobile_type = forms.CharField(label="Care este tipul autovehiculului?", widget=forms.Select(choices=MobileGoodsType.return_as_iterable()))
@@ -100,8 +105,9 @@ class TranscribeOwnedAutomobileRowEntry(forms.Form):
 
 
 class TranscribeOwnedJewelryTable(forms.Form):
-    count = forms.IntegerField(label="Câte rânduri completate există în tabelul {}?".format(constants.DECLARATION_TABLES['jewelry']), min_value=0)
-
+    count = forms.IntegerField(label=_(format_lazy('Câte rânduri completate există în tabelul {jewelry}?',
+                                                   jewelry=_(constants.DECLARATION_TABLES['jewelry']))),
+                               min_value=0)
 
 class TranscribeOwnedJewelryRowEntry(forms.Form):
     description = forms.CharField(label="Care este descrierea bunului?")
@@ -111,8 +117,9 @@ class TranscribeOwnedJewelryRowEntry(forms.Form):
 
 
 class TranscribeExtraValuableTable(forms.Form):
-    count = forms.IntegerField(label="Câte rânduri completate există în tabelul {}?".format(constants.DECLARATION_TABLES['extra_valuable']), min_value=0)
-
+    count = forms.IntegerField(label=_(format_lazy('Câte rânduri completate există în tabelul {extra_valuable}?',
+                                                   extra_valuable=_(constants.DECLARATION_TABLES['extra_valuable']))),
+                               min_value=0)
 
 class TranscribeExtraValuableRowEntry(forms.Form):
     estrangement_goods_type = forms.CharField(label="Care este natura bunului instrainat?",
@@ -133,8 +140,9 @@ class TranscribeExtraValuableRowEntry(forms.Form):
 
 
 class TranscribeOwnedBankAccountsTable(forms.Form):
-    count = forms.IntegerField(label="Câte rânduri completate există în tabelul {}?".format(constants.DECLARATION_TABLES['bank_accounts']), min_value=0)
-
+    count = forms.IntegerField(label=_(format_lazy('Câte rânduri completate există în tabelul {bank_accounts}?',
+                                                   bank_accounts=_(constants.DECLARATION_TABLES['bank_accounts']))),
+                               min_value=0)
 
 class TranscribeOwnedBankAccountsRowEntry(forms.Form):
     financial_institution = forms.ChoiceField(label="Care este institutia financiara?", choices=FinancialInstitution.return_as_iterable())
@@ -145,8 +153,9 @@ class TranscribeOwnedBankAccountsRowEntry(forms.Form):
 
 
 class TranscribeOwnedInvestmentsOver5KTable(forms.Form):
-    count = forms.IntegerField(label="Câte rânduri completate există în tabelul {}?".format(constants.DECLARATION_TABLES['investments']), min_value=0)
-
+    count = forms.IntegerField(label=_(format_lazy('Câte rânduri completate există în tabelul {investments}?',
+                                                   investments=_(constants.DECLARATION_TABLES['investments']))),
+                               min_value=0)
 
 class TranscribeOwnedInvestmentsOver5KRowEntry(forms.Form):
     beneficiary_surname = forms.CharField(label="Care este numele beneficiarului?")
@@ -161,8 +170,9 @@ class TranscribeOwnedInvestmentsOver5KRowEntry(forms.Form):
 
 
 class TranscribeOwnedDebtsTable(forms.Form):
-    count = forms.IntegerField(label="Câte rânduri completate există în tabelul {}?".format(constants.DECLARATION_TABLES['debts']), min_value=0)
-
+    count = forms.IntegerField(label=_(format_lazy('Câte rânduri completate există în tabelul {debts}?',
+                                                   debts=_(constants.DECLARATION_TABLES['debts']))),
+                               min_value=0)
 
 class TranscribeOwnedDebtsRowEntry(forms.Form):
     loaner_surname = forms.CharField(label="Care este numele creditorului?")
@@ -176,8 +186,9 @@ class TranscribeOwnedDebtsRowEntry(forms.Form):
 
 
 class TranscribeOwnedGoodsOrServicesTable(forms.Form):
-    count = forms.IntegerField(label="Câte rânduri completate există în tabelul {}?".format(constants.DECLARATION_TABLES['goods']), min_value=0)
-
+    count = forms.IntegerField(label=_(format_lazy('Câte rânduri completate există în tabelul {goods}?',
+                                                   goods=_(constants.DECLARATION_TABLES['goods']))),
+                               min_value=0)
 
 class TranscribeOwnedGoodsOrServicesRowEntry(forms.Form):
     holder_relationship = forms.ChoiceField(label="Cine este beneficiarul pensiei?", choices=HolderRelationship.return_as_iterable())
@@ -194,8 +205,9 @@ class TranscribeOwnedGoodsOrServicesRowEntry(forms.Form):
 
 
 class TranscribeOwnedIncomeFromSalariesTable(forms.Form):
-    count = forms.IntegerField(label="Câte rânduri completate există în tabelul {}?".format(constants.DECLARATION_TABLES['salaries']), min_value=0)
-
+    count = forms.IntegerField(label=_(format_lazy('Câte rânduri completate există în tabelul {salaries}?',
+                                                   salaries=_(constants.DECLARATION_TABLES['salaries']))),
+                               min_value=0)
 
 class TranscribeOwnedIncomeFromSalariesRowEntry(forms.Form):
     surname = forms.CharField(label="Care e numele persoanei?")
@@ -212,8 +224,9 @@ class TranscribeOwnedIncomeFromSalariesRowEntry(forms.Form):
 
 
 class TranscribeIndependentActivitiesTable(forms.Form):
-    count = forms.IntegerField(label="Câte rânduri completate există în tabelul {}?".format(constants.DECLARATION_TABLES['independent_activities']), min_value=0)
-
+    count = forms.IntegerField(label=_(format_lazy('Câte rânduri completate există în tabelul {independent_activities}?',
+                                                   independent_activities=_(constants.DECLARATION_TABLES['independent_activities']))),
+                               min_value=0)
 
 class TranscribeIndependentActivitiesRowEntry(forms.Form):
     surname = forms.CharField(label="Care e numele persoanei care a realizat venitul?")
@@ -230,8 +243,9 @@ class TranscribeIndependentActivitiesRowEntry(forms.Form):
 
 
 class TranscribeOwnedIncomeFromDeferredUseOfGoodsTable(forms.Form):
-    count = forms.IntegerField(label="Câte rânduri completate există în tabelul {}?".format(constants.DECLARATION_TABLES['deferred_use']), min_value=0)
-
+    count = forms.IntegerField(label=_(format_lazy('Câte rânduri completate există în tabelul {deferred_use}?',
+                                                   deferred_use=_(constants.DECLARATION_TABLES['deferred_use']))),
+                               min_value=0)
 
 class TranscribeOwnedIncomeFromDeferredUseOfGoodsRowEntry(forms.Form):
     surname = forms.CharField(label="Care e numele persoanei care a realizat venitul?")
@@ -248,8 +262,9 @@ class TranscribeOwnedIncomeFromDeferredUseOfGoodsRowEntry(forms.Form):
 
 
 class TranscribeOwnedIncomeFromInvestmentsTable(forms.Form):
-    count = forms.IntegerField(label="Câte rânduri completate există în tabelul {}?".format(constants.DECLARATION_TABLES['income_investments']), min_value=0)
-
+    count = forms.IntegerField(label=_(format_lazy('Câte rânduri completate există în tabelul {income_investments}?',
+                                                   income_investments=_(constants.DECLARATION_TABLES['income_investments']))),
+                               min_value=0)
 
 class TranscribeOwnedIncomeFromInvestmentsRowEntry(forms.Form):
     holder_relationship = forms.ChoiceField(label="Cine este beneficiarul venitului din investitii?", choices=HolderRelationship.return_as_iterable())
@@ -265,8 +280,9 @@ class TranscribeOwnedIncomeFromInvestmentsRowEntry(forms.Form):
 
 
 class TranscribeOwnedIncomeFromPensionsTable(forms.Form):
-    count = forms.IntegerField(label="Câte rânduri completate există în tabelul {}?".format(constants.DECLARATION_TABLES['pensions']), min_value=0)
-
+    count = forms.IntegerField(label=_(format_lazy('Câte rânduri completate există în tabelul {pensions}?',
+                                                   pensions=_(constants.DECLARATION_TABLES['pensions']))),
+                               min_value=0)
 
 class TranscribeOwnedIncomeFromPensionsRowEntry(forms.Form):
     beneficiary_relationship = forms.ChoiceField(label="Cine este beneficiarul pensiei?", choices=HolderRelationship.return_as_iterable())
@@ -284,8 +300,9 @@ class TranscribeOwnedIncomeFromPensionsRowEntry(forms.Form):
 
 
 class TranscribeOwnedIncomeFromAgriculturalActivitiesTable(forms.Form):
-    count = forms.IntegerField(label="Câte rânduri completate există în tabelul {}?".format(constants.DECLARATION_TABLES['agriculture']), min_value=0)
-
+    count = forms.IntegerField(label=_(format_lazy('Câte rânduri completate există în tabelul {agriculture}?',
+                                                   agriculture=_(constants.DECLARATION_TABLES['agriculture']))),
+                               min_value=0)
 
 class TranscribeOwnedIncomeFromAgriculturalActivitiesRowEntry(forms.Form):
     holder_relationship = forms.ChoiceField(label="Cine este beneficiarul venitului din activități agricole?", choices=HolderRelationship.return_as_iterable())
@@ -302,8 +319,9 @@ class TranscribeOwnedIncomeFromAgriculturalActivitiesRowEntry(forms.Form):
 
 
 class TranscribeOwnedIncomeFromGamblingTable(forms.Form):
-    count = forms.IntegerField(label="Câte rânduri completate există în tabelul {}?".format(constants.DECLARATION_TABLES['gambling']), min_value=0)
-
+    count = forms.IntegerField(label=_(format_lazy('Câte rânduri completate există în tabelul {gambling}?',
+                                                   gambling=_(constants.DECLARATION_TABLES['gambling']))),
+                               min_value=0)
 
 class TranscribeOwnedIncomeFromGamblingRowEntry(forms.Form):
     surname = forms.CharField(label="Care e numele persoanei care a realizat venitul?")
@@ -320,8 +338,9 @@ class TranscribeOwnedIncomeFromGamblingRowEntry(forms.Form):
 
 
 class TranscribeOwnedIncomeFromOtherSourcesTable(forms.Form):
-    count = forms.IntegerField(label="Câte rânduri completate există în tabelul {}?".format(constants.DECLARATION_TABLES['other_sources']), min_value=0)
-
+    count = forms.IntegerField(label=_(format_lazy('Câte rânduri completate există în tabelul {other_sources}?',
+                                                   other_sources=_(constants.DECLARATION_TABLES['other_sources']))),
+                               min_value=0)
 
 class TranscribeOwnedIncomeFromOtherSourcesRowEntry(forms.Form):
     holder_relationship = forms.ChoiceField(label="Cine a realizat venitul?", choices=HolderRelationship.return_as_iterable())
