@@ -186,3 +186,26 @@ msgstr "What is the owner's surname?"
 #: project_template/forms.py:91
 msgid "Care este prenumele titularului"
 msgstr "What is the owner's name?"
+
+#: project_template/forms.py:100
+msgid "Care este tipul autovehiculului?"
+msgstr "What is the auto vehicle's type?"
+
+#: project_template/forms.py:101
+msgid "Care este marca autovehiculului?"
+msgstr "What is the auto vehicle's brand?"
+
+#: project_template/forms.py:102
+msgid "Care este numarul de autovehicule detinute?"
+msgstr "What is the number of owned auto vehicles?"
+
+#: project_template/forms.py:103
+msgid "Care este anul de fabricatie al autovehiculului?"
+msgstr "What is the auto vehicle's production year?"
+
+#: project_template/forms.py:104
+msgid "Care este modul in care a fost dobandit autovehiculul?"
+msgstr "How was the auto vehicle acquired?"
+
+msgid "Gasiti tabelul \"II Bunuri Mobile - 1. Autovehicule/Autoturisme\" si transcrieti datele de pe randul %(row_num)s."
+msgstr "Please find table \"II Bunuri Mobile - 1. Autovehicule/Autoturisme\" and fill in the information found at row %(row_num)s."

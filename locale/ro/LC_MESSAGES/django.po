@@ -174,3 +174,26 @@ msgstr ""
 #: project_template/forms.py:89
 msgid "Care este modul in care cladirea a fost dobandita?"
 msgstr ""
+
+#: project_template/forms.py:100
+msgid "Care este tipul autovehiculului?"
+msgstr "What is the auto vehicle's type?"
+
+#: project_template/forms.py:101
+msgid "Care este marca autovehiculului?"
+msgstr ""
+
+#: project_template/forms.py:102
+msgid "Care este numarul de autovehicule detinute?"
+msgstr ""
+
+#: project_template/forms.py:103
+msgid "Care este anul de fabricatie al autovehiculului?"
+msgstr ""
+
+#: project_template/forms.py:104
+msgid "Care este modul in care a fost dobandit autovehiculul?"
+msgstr ""
+
+msgid "Gasiti tabelul \"II Bunuri Mobile - 1. Autovehicule/Autoturisme\" si transcrieti datele de pe randul %(row_num)s."
+msgstr ""

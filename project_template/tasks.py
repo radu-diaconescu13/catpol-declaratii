@@ -62,7 +62,7 @@ class TaskOwnedLandTable(CountTableRowsTask):
     storage_model = models.OwnedLandTable
     child_class = TaskOwnedLandRowEntry
 
-
+@register()
 class TaskOwnedAutomobileRowEntry(DigitalizationTask):
     task_form = forms.TranscribeOwnedAutomobileRowEntry
     template_name = "tasks/owned_automobile.html"
@@ -478,7 +478,7 @@ class TaskOwnedBuildingsRowEntry(DigitalizationTask):
         )
 
 
-
+# @register()
 class TaskOwnedBuildingsTable(CountTableRowsTask):
     task_form = forms.TranscribeOwnedBuildingsTable
     storage_model = models.OwnedBuildingsTable

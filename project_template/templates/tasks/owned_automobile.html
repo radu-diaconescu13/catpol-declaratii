@@ -1,8 +1,9 @@
 {% extends "task.html" %}
+{% load i18n %}
 
 {% block explanation %}
 <div class = "row-fluid">
-	<p>Gasiti tabelul "Bunuri Mobile - Autovehicule/Autoturisme" si transcrieti datele de pe randul {{row_num}}</p>
+	<p>{% blocktrans %}Gasiti tabelul "II Bunuri Mobile - 1. Autovehicule/Autoturisme" si transcrieti datele de pe randul {{row_num}}.{% endblocktrans %}</p>
 
 </div>
 {% endblock %}

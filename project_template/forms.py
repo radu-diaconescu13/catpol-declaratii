@@ -97,11 +97,11 @@ class TranscribeOwnedAutomobileTable(forms.Form):
                                min_value=0)
 
 class TranscribeOwnedAutomobileRowEntry(forms.Form):
-    automobile_type = forms.CharField(label="Care este tipul autovehiculului?", widget=forms.Select(choices=MobileGoodsType.return_as_iterable()))
-    manufacturer = forms.CharField(label="Care este marca autovehiculului?")
-    num_of_automobiles = forms.IntegerField(label="Care este numarul de autovehicule detinute?")
-    year_of_manufacture = forms.ChoiceField(label="Care este anul de fabricatie al autovehiculului?", choices=get_dict_year_choices)
-    attainment_type = forms.CharField(label="Care este modul in care a fost dobandit autovehiculul?", widget=forms.Select(choices=AttainmentType.return_as_iterable()))
+    automobile_type = forms.CharField(label=_("Care este tipul autovehiculului?"), widget=forms.Select(choices=MobileGoodsType.return_as_iterable()))
+    manufacturer = forms.CharField(label=_("Care este marca autovehiculului?"))
+    num_of_automobiles = forms.IntegerField(label=_("Care este numarul de autovehicule detinute?"))
+    year_of_manufacture = forms.ChoiceField(label=_("Care este anul de fabricatie al autovehiculului?"), choices=get_dict_year_choices)
+    attainment_type = forms.CharField(label=_("Care este modul in care a fost dobandit autovehiculul?"), widget=forms.Select(choices=AttainmentType.return_as_iterable()))
 
 
 class TranscribeOwnedJewelryTable(forms.Form):
